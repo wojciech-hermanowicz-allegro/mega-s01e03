@@ -4,7 +4,7 @@ title: '#4471 · two causes of wrong booking dates'
 owner: support desk
 status: closed
 reviewed: '2026-11-22'
-signature: 'Codex for Wojciech Hermanowicz'
+signature: "v1.eyJzdWIiOiIyNTg0IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTUzODIzODMsImV4cCI6MTc5NTQ2ODc4M30.sgKzVd2rQFDGNK_OhC4BHwmA6pRNwgGzXLnZo2POfYI"
 ---
 
 <script>
