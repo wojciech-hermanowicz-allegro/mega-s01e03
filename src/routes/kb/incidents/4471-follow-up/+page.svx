@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 · two causes of wrong booking dates'
 owner: support desk
-status: triaged
+status: closed
 reviewed: '2026-11-22'
 signature: 'Codex for Wojciech Hermanowicz'
 ---
@@ -16,15 +16,17 @@ signature: 'Codex for Wojciech Hermanowicz'
 </script>
 
 The reports in [the original incident](/kb/incidents/4471) describe bookings on the wrong
-date. Two parts of the booking flow can cause that symptom. They need separate fixes.
+date. Two parts of the booking flow caused that symptom. Engineering closed #4471 on
+5 October 2026.
 
 ## What the desk found
 
-- **Shared parser.** The parser reads the month first even when the tenant writes the day
-  first. It can interpret an intended 7 April as 4 July. Read the date in the tenant's format.
+- **Shared parser · Fixed.** The parser read the month first even when the tenant wrote the
+  day first. It could interpret an intended 7 April as 4 July. Engineering shipped
+  `fix(dates): parse dd/mm for eu locales`.
 - **Booking-v3 date hint.** The form tells people to enter `MM/DD/YYYY` even when it reads
   their input day first. A customer following that hint can type `04/07/2026` for 7 April
-  and get 4 July. Make the hint match the format the form accepts.
+  and get 4 July. Engineering marked this Won’t Fix because Booking-v3 was retired.
 
 ## Reports and scope
 
